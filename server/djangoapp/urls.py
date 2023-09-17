@@ -18,8 +18,10 @@ urlpatterns = [
     # path for registration
 
     # path for login
+    path(route='', view=views.get_dealerships, name='login'),
 
     # path for logout
+    path(route='', view=views.get_dealerships, name='logout'),
 
     path(route='', view=views.get_dealerships, name='index'),
 
